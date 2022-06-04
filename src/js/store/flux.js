@@ -1,10 +1,13 @@
+import { string } from "prop-types";
+
 const getState = ({ getStore, getActions, setStore }) => {
 	return {
 		store: {
-			characters: null,
+			people: null,
             planets: null,
-            character: null,
-            planet: null,
+            species: null,
+            starships: null,
+            starships:null,
             favorite: [],
         },
 		actions: {
@@ -12,14 +15,14 @@ const getState = ({ getStore, getActions, setStore }) => {
                 const resp = await fetch("https://www.swapi.tech/api/people");
                 const dataCharacters = await resp.json();
                 setStore({
-                    characters: dataCharacters
+                    people: dataCharacters
                 })
             },
             getPlanets: async (url) => {
                 const resp = await fetch("https://www.swapi.tech/api/planets");
                 const dataPlanets = await resp.json();
                 setStore({
-                    planets: dataPlanets
+                    planet: dataPlanets
                 })
             },
            

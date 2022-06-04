@@ -24,11 +24,12 @@ const Layout = () => {
 			<BrowserRouter basename={basename}>
 				<ScrollToTop>
 					<Navbar />
-				    <Home><Personaje></Personaje></Home>
+				    <Home></Home>
 					<Link to="/CardPersonajes">Personajes
 					
 					</Link>
 					<Switch>
+					
 					<Route exact path="/CardPersonajes/" component={<CardPersonajes></CardPersonajes>}/>
 					<Route exact path="/planet/:id" component={Planet} />
                     <Route exact path="/personaje/:id" component={Personaje} />

@@ -2,7 +2,7 @@ import React from "react";
 import { Context } from "../store/appContext.js";
 import { Link } from "react-router-dom";
 import { useContext } from "react";
-import CardPersonajes from "../../Compartidos/CardPersonajes.jsx";
+// import CardPersonajes from "../../Compartidos/CardPersonajes.jsx";
 
 export const Navbar = () => {const {store,actions}=useContext(Context);
 	return  (<>

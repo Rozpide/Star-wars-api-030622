@@ -11,20 +11,20 @@ const Footer = (props) => {
         <div className="row mb-3">
             {
                 props.location.pathname == "/" ?
-                    store.characters !== null &&
+                    store.people !== null &&
                     (<>
                         {
-                            store.characters.previous === null ?
+                            store.people.previous === null ?
                               ""
                                 :
-                                <button type="button" className="col-md-4 btn btn-secondary btn-lg offset-md-2 mr-4 btnFooter mx-auto" onClick={() => actions.getCharacters(store.characters.previous)} >Anterior</button>
+                                <button type="button" className="col-md-4 btn btn-secondary btn-lg offset-md-2 mr-4 btnFooter mx-auto" onClick={() => actions.getCharacters(store.people.previous)} >Anterior</button>
                         }
 
                         {
-                            store.characters.next === null ?
+                            store.people.next === null ?
                                ""
                                  :
-                                <button type="button" className="col-md-4 btn btn-secondary btn-lg btnFooter mx-auto" onClick={() => actions.getCharacters(store.characters.next)} >Siguiente</button>
+                                <button type="button" className="col-md-4 btn btn-secondary btn-lg btnFooter mx-auto" onClick={() => actions.getCharacters(store.people.next)} >Siguiente</button>
 
                         }
                     </>
