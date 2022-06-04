@@ -8,7 +8,7 @@ const CardPersonajes = (props) => {
     return (
         <div className="col-md-3 my-4 ">
             <div className="card border-0">
-                <img src={"https://starwars-visualguide.com/assets/img/characters/" + (props.personaje.url.replace("http://swapi.dev/api/people/", "").replace("/", "")) + ".jpg"} id="fotoHeaderCard" className="card-img-top" />
+                <img src={"https://swapi.dev/api/people/?page=2" + (props.personaje.url.replace("http://swapi.dev/api/people/", "").replace("/", "")) + ".jpg"} id="fotoHeaderCard" className="card-img-top" />
                 <div className="card-body">
                     <h5 className="card-title text-center"><ins>{props.personaje.name}</ins></h5>
                     <p className="card-text"><b>Personaje: </b><i>{props.personaje.gender}</i></p>

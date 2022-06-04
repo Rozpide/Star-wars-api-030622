@@ -9,9 +9,7 @@ export const Navbar = () => {const {store,actions}=useContext(Context);
         <div className="row my-2 bg-secondary sticky-top">
 
             <div className="col-md-2">
-                <img className="img-fluid logo" src="https://am22.mediaite.com/tms/cnt/uploads/2015/10/2000px-Star_Wars_Logo.svg_-640x386.png" onClick={(<>
-                
-                </>)}>
+                <img className="img-fluid logo" src="https://am22.mediaite.com/tms/cnt/uploads/2015/10/2000px-Star_Wars_Logo.svg_-640x386.png" >
                     
                 </img>
             </div>

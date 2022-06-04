@@ -21,16 +21,28 @@ const injectContext = PassedComponent => {
 			})
 		);
 
-		  useEffect=() => {
-			fetch("https://www.swapi.tech/api")
-			.then(res => res.json())
-			.then(data => console.log(data))
-			.catch(err => console.error(err))
+		//   useEffect=()=> {
+		// 	fetch(" https://swapi.dev/api/")
+			
+		// 	.then(res => res.json())
+		// 	.then(data => console.log(data))
+		// 	.catch(err => console.error(err))
 						
-				},[];	
+		// 		},[];	
 		
-		
-		
+		    useEffect=()=>{
+				fetch("https://swapi.dev/api/",{
+					method: "GET",
+					headers:{"Content-Type":"application/json",},
+				})
+			 .then((res)=>{console.log({status:res.status});
+		   
+		      return res.json();})
+			.then((res)=>{console.log({res});
+			})
+		     .catch((err)=>{
+				 console.log({err})
+			 })}
 			/**
 			 * EDIT THIS!
 			 * This function is the equivalent to "window.onLoad", it only runs once on the entire application lifetime

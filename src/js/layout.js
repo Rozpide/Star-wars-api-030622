@@ -24,7 +24,7 @@ const Layout = () => {
 			<BrowserRouter basename={basename}>
 				<ScrollToTop>
 					<Navbar />
-				    <Home></Home>
+				    <Home><Personaje></Personaje></Home>
 					<Link to="/CardPersonajes">Personajes
 					
 					</Link>
