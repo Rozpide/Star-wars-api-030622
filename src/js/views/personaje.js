@@ -15,7 +15,7 @@ export const Personaje = (props) => {
         {
             store.character === null ?
                 <div className="row">
-                    <Spinner />
+                   
                 </div>
                 : <>
                     <div className="row">

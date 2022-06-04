@@ -11,7 +11,7 @@ export const Planet = (props) => {
         {
             store.planet === null ?
                 <div className="row">
-                    <Spinner />
+                  
                 </div>
                 : <>
                     <div className="row">
