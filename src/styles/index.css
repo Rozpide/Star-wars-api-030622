@@ -1,3 +1,96 @@
 /* 
     General Styles
 */
+body {
+    background-color: #6c757d;
+}
+
+.dropdown {
+    position: relative;
+    top: 2px
+}
+
+#spanNum {
+    display: inline-block;
+    border-radius: 25%;
+    background-color: yellow;
+    width: 15px;
+    height: 15px;
+    margin-left: 3px;
+    position: relative;
+    top: 5px;
+}
+
+#pNum {
+    position: relative;
+    color: black;
+    bottom: 5px;
+}
+
+#ulHeader {
+    font-size: 20px;
+    position: relative;
+    bottom: 5px;
+}
+
+#ulHeader>li:hover {
+    transition: 900ms;
+    background-color: lightskyblue;
+    border-radius: 5px;
+}
+
+li {
+    letter-spacing: 7px;
+}
+
+.logo {
+    height: 65px;
+    width: 110px;
+    position: relative;
+}
+
+.btnFooter:hover {
+    transition: 900ms;
+    background-color: darkorange;
+    border: none;
+}
+
+.card-footer {
+    background: none
+}
+
+
+.card {
+    height: 470px;
+}
+
+.separador {
+    background-color: rgb(187, 36, 36);
+}
+
+#fotoHeaderCard{
+    height: 200px;
+    object-fit: fill;
+}
+
+#cardBodyPlanetas{
+    height: 100px;
+}
+
+#fotoCardPersonaje{
+    width: 80%;
+    height: 400px;
+}
+#fotoCardPlanet{
+    width: 80%;
+    height: 400px;
+}
+.fa-trash{
+    margin: 4px;
+    cursor: pointer;
+}
+
+.corazonActivo{
+    background-color: #ffc107;
+    color: black;
+}
